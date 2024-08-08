@@ -17,6 +17,9 @@
         Contrasena varchar(max) not null
     )
     go
+    insert into Usuario
+    values (newid(), 'Omar', 'Maurera', 'YW12dHJhdmVsMjAyNA==')
+    go
     create table Tour (
         Id uniqueidentifier primary key not null,
         Nombre varchar(100) not null,
