@@ -6,4 +6,40 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Features\" />
+    <None Remove="Middlewares\" />
+    <None Remove="Features\Tour\" />
+    <None Remove="Features\Reserva\" />
+    <None Remove="Features\Usuario\" />
+    <None Remove="Mappings\" />
+    <None Remove="Features\Reserva\Queries\" />
+    <None Remove="Features\Reserva\Commands\" />
+    <None Remove="Features\Tour\Queries\" />
+    <None Remove="Features\Tour\Commands\" />
+    <None Remove="Features\Usuario\Queries\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Features\" />
+    <Folder Include="Middlewares\" />
+    <Folder Include="Features\Tour\" />
+    <Folder Include="Features\Reserva\" />
+    <Folder Include="Features\Usuario\" />
+    <Folder Include="Mappings\" />
+    <Folder Include="Features\Reserva\Queries\" />
+    <Folder Include="Features\Reserva\Commands\" />
+    <Folder Include="Features\Tour\Queries\" />
+    <Folder Include="Features\Tour\Commands\" />
+    <Folder Include="Features\Usuario\Queries\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AMVTravel.Domain\AMVTravel.Domain.csproj" />
+    <ProjectReference Include="..\AMVTravel.Infrastructure\AMVTravel.Infrastructure.csproj" />
+  </ItemGroup>
 </Project>

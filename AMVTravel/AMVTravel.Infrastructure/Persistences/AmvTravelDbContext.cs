@@ -9,6 +9,7 @@ namespace AMVTravel.Infrastructure.Persistences
 		{
 		}
 
+		public DbSet<Usuario> Usuario { get; set; }
 		public DbSet<Tour> Tour { get; set; }
 		public DbSet<Reserva> Reserva { get; set; }
 	}

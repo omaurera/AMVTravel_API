@@ -20,7 +20,7 @@ namespace AMVTravel.Infrastructure.Repositories
             return await GuardarCambios();
         }
 
-        public async Task<bool> GuardarEntidad(T entidad)
+        public async Task<bool> InsertarEntidad(T entidad)
         {
             await _context.Set<T>().AddAsync(entidad);
             return await GuardarCambios();
