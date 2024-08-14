@@ -37,4 +37,5 @@
         TourId uniqueidentifier not null foreign key references Tour(Id)
     )
 
-<p align="left">2. Levantar la api para su uso inicial.</p>
+<p align="left">2. Cambiar el ConnectionStrings qeu se encuentra dentro del proyecto AmvTravel.Api en el archivo appsetings.json.</p>
+<p align="left">3. Levantar la api para su uso inicial.</p>
