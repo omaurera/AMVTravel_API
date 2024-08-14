@@ -14,6 +14,7 @@
         Id uniqueidentifier not null primary key,
         Nombre varchar(100) not null,
         Apellido varchar(100) not null,
+        NombreUsuario varchar(
         Contrasena varchar(max) not null
     )
     go
@@ -29,7 +30,7 @@
         Precio decimal(10,2)
     )
     go
-    create table Reseva (
+    create table Reserva (
         Id uniqueidentifier primary key not null,
         Cliente varchar(100) not null,
         FechaReserva date not null,
